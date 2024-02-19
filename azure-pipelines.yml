@@ -12,7 +12,7 @@ variables:
   azureSubscription: 'demo-sc'
 
   # Web app name
-  webAppName: 'demo-ex-app/dev'
+  webAppName: 'dev(demo-ex-app/dev)'
 
   # Environment name
   environmentName: 'node-ex-app'
