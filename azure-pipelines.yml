@@ -76,3 +76,11 @@ stages:
               runtimeStack: 'NODE|20.10'
               package: $(Pipeline.Workspace)/drop/$(Build.BuildId).zip
               startUpCommand: 'npm run start'
+
+- task: AzureAppServiceManage@0
+  inputs:
+    azureSubscription: $(azureSubscription)
+    Action: 'Swap Slots'
+    WebAppName: 'node-exp-app'
+    ResourceGroupName: 'demorg'
+    SourceSlot: 'dev'
