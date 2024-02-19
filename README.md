@@ -43,17 +43,6 @@ Follow my step-by-step guide: [Build Your First CI/CD Pipeline using Azure DevOp
 
 This walkthrough contains all the steps you should follow to fork this repo and build your own automated build and release pipeline.
 
-## App Info
-
-### Author
-
-Mike Pfeiffer
-[@mike_pfeiffer](https://twitter.com/mike_pfeiffer)
-
-### Version
-
-1.0.0
-
 ### License
 
 This project is licensed under the Apache License 2.0
