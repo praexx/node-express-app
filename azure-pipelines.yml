@@ -12,10 +12,10 @@ variables:
   azureSubscription: 'demo-sc'
 
   # Web app name
-  webAppName: 'node-exp-app'
+  webAppName: 'node-exp-app/dev'
 
   # Environment name
-  environmentName: 'node-exp-app'
+  environmentName: 'node-exp-app/dev'
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
