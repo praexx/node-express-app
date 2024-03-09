@@ -200,50 +200,6 @@
             "dependsOn": [
                 "[resourceId('Microsoft.Web/sites', parameters('site_host_name'))]"
             ]
-        },
-        {
-            "type": "Microsoft.Web/sites/slots",
-            "kind": "app,linux",
-            "name": "[concat(parameters('site_host_name'), '/', 'dev')]",
-            "apiVersion": "2016-08-01",
-            "location": "[resourceGroup().location]",
-            "scale": null,
-            "properties": {
-                "enabled": true,
-                "hostNameSslStates": [{
-                        "name": "[concat(parameters('site_host_name'), '-', 'dev','.azurewebsites.net')]",
-                        "sslState": "Disabled",
-                        "virtualIP": null,
-                        "thumbprint": null,
-                        "toUpdate": null,
-                        "hostType": "Standard"
-                    },
-                    {
-                        "name": "[concat(parameters('site_host_name'), '-', 'dev','.scm.azurewebsites.net')]",
-                        "sslState": "Disabled",
-                        "virtualIP": null,
-                        "thumbprint": null,
-                        "toUpdate": null,
-                        "hostType": "Repository"
-                    }
-                ],
-                "serverFarmId": "[resourceId('Microsoft.Web/serverfarms', parameters('app_svc_plan_name'))]",
-                "reserved": true,
-                "siteConfig": null,
-                "scmSiteAlsoStopped": false,
-                "hostingEnvironmentProfile": null,
-                "clientAffinityEnabled": true,
-                "clientCertEnabled": false,
-                "hostNamesDisabled": false,
-                "containerSize": 0,
-                "dailyMemoryTimeQuota": 0,
-                "cloningInfo": null,
-                "httpsOnly": false
-            },
-            "dependsOn": [
-                "[resourceId('Microsoft.Web/sites', parameters('site_host_name'))]",
-                "[resourceId('Microsoft.Web/serverfarms', parameters('app_svc_plan_name'))]"
-            ]
         }
     ]
 }
