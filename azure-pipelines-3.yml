@@ -27,7 +27,7 @@ stages:
   - job: Build
     displayName: Build
     pool:
-      name: kehinde olasanmi MyPool
+      name: $(kehinde olasanmi MyPool)
 
     steps:
     - task: NodeTool@0
@@ -62,7 +62,7 @@ stages:
     displayName: Deploy
     environment: $(environmentName)
     pool:
-      name: kehinde olasanmi MyPool
+      name: $(kehinde olasanmi MyPool)
     strategy:
       runOnce:
         deploy:
