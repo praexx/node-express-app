@@ -4,7 +4,7 @@ const router = express.Router();
 /* GET home page. */
 router.get('/', (req, res) => {
   res.render('index', {
-    title: 'Hello, Welcome to Praez first webapp!',   
+    title: 'Hello and Welcome to Praez first webapp!',   
   });
 });
 
